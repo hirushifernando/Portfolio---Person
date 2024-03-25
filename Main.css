@@ -1,0 +1,1092 @@
+/* Resetting default margin and padding for the entire page */
+body{
+    margin:0;
+    padding: 0;
+    background-color: black;
+  }
+  /* Styling for the main header section */
+  .header{
+    min-height: 100vh; /* Setting minimum height to cover the entire viewport */
+    width:100%;   /* Taking up the full width of the viewport */
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('b6.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;/* Establishing a positioning context for child elements */
+  }
+  /* Styling for the main header section */
+  .header-B{
+    min-height: 100vh;/* Setting minimum height to cover the entire viewport */
+    width:100%;/* Taking up the full width of the viewport */
+    background-image: linear-gradient(rgba(32, 32, 32, 0.7),rgba(25, 25, 27, 0.7)),url('p13.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;/* Establishing a positioning context for child elements */
+  
+  }
+  /* Styling for the main header section */
+  .header-A{
+    min-height: 100vh;/* Setting minimum height to cover the entire viewport */
+    width:100%;/* Taking up the full width of the viewport */
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('p1.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;/* Establishing a positioning context for child elements */
+  }
+  /* Styling for the main header section */
+.header-F{
+  min-height: 100vh;/* Setting minimum height to cover the entire viewport */
+  width:100%;/* Taking up the full width of the viewport */
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('F2.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;/* Establishing a positioning context for child elements */
+}
+/* Styling for the navigation bar */
+  nav{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 9;/* Set the z-index to ensure it appears above other elements */
+      backdrop-filter: blur(5px);/* Applying a blur effect to the background */
+      position: fixed;
+      width: 100%;
+  }
+  /* Styling for the logo within the navigation bar */
+  .logo{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    animation: bounce 1s;/* Applying bounce animation with a duration of 1 second */
+		position:relative;/* Establishing a positioning context for child elements */
+  }
+  /* Bounce animation keyframes for the logo */
+  @keyframes bounce {
+    /* Start and end positions (0%, 100%) have no vertical translation (bounce at the top) */
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    /* At 40% completion, translate vertically upward to create a bounce effect */
+    40% {
+      transform: translateY(-30px);
+    }
+     /* At 60% completion, translate vertically upward to create a smaller bounce effect */
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  /* Styling for navigation links */
+  .nav-link{
+    flex: 1px; /* Flexible layout, taking up available space */
+    text-align: right; /* Aligning text to the right within the container */
+  }
+  /* Styling for the navigation links list */
+  .nav-link ul li{
+    list-style: none; /* Removing default list styling */
+    display: inline-block; /* Displaying list items in a horizontal line */
+    padding: 2px 40px; /* Adding padding to each list item */
+    position: relative; /* Establishing a positioning context for child elements */
+    font-family: 'Nunito', sans-serif; /* Applying a specific font family */
+  }
+  /* Styling for the navigation links */
+  .nav-link ul li a{
+    color: white; /* Setting the text color to white */
+    font-weight: 500; /* Applying a font weight of 500 */
+    font-size: 25px; /* Setting the font size to 25 pixels */
+    text-decoration: none; /* Removing underline from links */
+  }
+  /* Styling for the underline effect on hover */
+  .nav-link ul li a::after{
+    content: ''; /* Creating an empty content pseudo-element */
+    width: 0%; /* Initially no width for the underline effect */
+    height: 2px; /* Setting the height of the underline */
+    background: #f44336; /* Setting the background color of the underline */
+    display: block; /* Displaying as a block-level element */
+    margin: auto; /* Centering the underline */
+    transition: 0.5s; /* Adding a smooth transition effect over 0.5 seconds */
+  }
+  /* Styling for the underline effect on navigation link hover */
+.nav-link ul li a:hover::after {
+  width: 100%; /* Enlarge the underline effect to cover the full width on hover */
+}
+  /* Media query for smaller screens (max-width: 600px) */
+  @media only screen and (max-width: 600px) {
+    nav {
+      width: 100%; /* Make the navigation bar full width on smaller screens */
+      height: 140px; /* Set a specific height for the navigation bar on smaller screens */
+    }
+  
+    /* Adjusting navigation link styles for smaller screens */
+    .nav-link {
+      text-align: right; /* Align text to the right on smaller screens */
+      margin-top: 0; /* Remove top margin on smaller screens */
+    }
+  
+    /* Further adjustments for smaller screens */
+    .nav-link ul li {
+      display: inline-block; /* Change back to inline-block on smaller screens */
+      margin-bottom: 0; /* Remove bottom margin on list items on smaller screens */
+      margin-right: 10px; /* Add space between links on smaller screens */
+    }
+  }
+  /* Container styling */
+.container1 {
+  display: flex;             /* Use flexbox for layout */
+  max-width: 1500px;         /* Set maximum width for the container */
+  margin-left: auto;         /* Center the container horizontally */
+  margin-right: auto;
+  padding-left: 80px;        /* Add left padding */
+  padding-top: 60px;         /* Add top padding */
+  padding-bottom: 30px;      /* Add bottom padding */
+}
+
+/* Column styling */
+.column1 {
+  width: 40%;                /* Set the width of the column to 40% of its container */
+}
+
+/* Welcome text styling */
+.welcome-text1 {
+  background-color: rgba(218, 215, 215, 0.8); /* Set background color with alpha transparency */
+  margin-top: 100px;         /* Add top margin */
+  padding: 2px 40px;         /* Add padding on top/bottom and left/right */
+  text-align: justify;       /* Justify the text within the container */
+}
+/* Media query for screens with a maximum width of 600 pixels */
+@media screen and (max-width: 600px) {
+  
+  /* Adjustments for container on smaller screens */
+  .container1 {
+    flex-direction: column; /* Change the flex direction to stack elements vertically */
+    align-items: center;    /* Center the items horizontally in the container */
+  }
+
+  /* Adjustments for columns on smaller screens */
+  .column1 {
+    width: 100%;            /* Make the column take full width on smaller screens */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    padding: 10px;          /* Add padding to the column */
+  }
+
+  /* Adjustments for welcome text on smaller screens */
+  .welcome-text1 {
+    padding: 10px;          /* Add padding to the welcome text */
+  }
+}
+  /* Styling for level 1 headings (h1) */
+h1 {
+  font-size: 30px;               /* Set the font size for h1 */
+  color: rgb(28, 28, 105);       /* Set the text color for h1 */
+  font-family: 'Roboto', sans-serif; /* Set the font family for h1 */
+}
+
+/* Styling for level 2 headings (h2) */
+h2 {
+  font-size: 20px;               /* Set the font size for h2 */
+  color: rgb(28, 28, 105);       /* Set the text color for h2 */
+  font-family: 'Roboto', sans-serif; /* Set the font family for h2 */
+}
+
+/* Styling for h2 with a target attribute */
+h2[target] {
+   color: red;                   /* Change the text color to red for h2 with a target attribute */
+   font-size: 24px;              /* Change the font size for h2 with a target attribute */
+}
+ /* Styling for the container */
+.container2 {
+  display: flex;                  /* Use flexbox for layout */
+  flex-wrap: wrap;                /* Allow items to wrap to the next line if necessary */
+  width: 100%;                    /* Take up the full width of the container */
+  justify-content: center;        /* Center items along the main axis (horizontally) */
+  align-items: center;            /* Center items along the cross axis (vertically) */
+  background-color: black;        /* Set the background color of the container */
+}
+
+/* Styling for the gallery items (gallery-M) */
+.gallery-M {
+  width: 400px;                   /* Set a fixed width for each gallery item */
+  margin: 50px;                   /* Add margin around each gallery item */
+  box-sizing: border-box;         /* Include padding and border in the total width */
+  float: left;                    /* Float the items to the left to create a grid-like layout */
+  text-align: center;             /* Center the text within each gallery item */
+  border-radius: 20px;            /* Add rounded corners to the gallery items */
+  cursor: pointer;                /* Set a pointer cursor to indicate interactivity */
+  transition: -4s;                /* Add a transition effect with a duration of -4 seconds (likely a typo, consider using a positive value) */
+  background: rgb(219, 217, 217); /* Set the background color of the gallery items */
+}
+
+/* Hover effect for gallery items */
+.gallery-M:hover {
+  transform: translate(15px, -20px); /* Move the gallery item 15px to the right and 20px up on hover */
+}
+  /* Styling for gallery images */
+/* Styling for gallery images */
+.imgM-G {
+  width: 250px;           /* Set the width of the gallery image */
+  height: 350px;          /* Set the height of the gallery image */
+  margin: 30px;           /* Add margin around the gallery image */
+  margin-bottom: 10px;    /* Add bottom margin to separate gallery images */
+}
+
+/* Styling for gallery image descriptions */
+.name-M {
+  padding: 4px;            /* Add padding around the gallery image description */
+  text-align: center;      /* Center the text within the gallery image description */
+  color: black;            /* Set the text color to black */
+  font-size: 20px;         /* Set the font size of the gallery image description */
+  font-weight: 600;        /* Set the font weight to 600 (bold) */
+  margin-bottom: 20px;     /* Add bottom margin to separate the gallery image description from other elements */
+  font-family: 'Roboto', sans-serif; /* Set the font family for the gallery image description */
+}
+/* Styling for the gallery button */
+.btnM-G {
+  text-align: center;            /* Center the text within the button */
+  font-size: 24px;               /* Set the font size of the button text */
+  color: #ffffff;                /* Set the text color to white */
+  width: 100%;                   /* Set the button width to 100% of its container */
+  padding: 15px;                 /* Add padding around the button text */
+  border: 0;                     /* Remove the border */
+  outline: none;                 /* Remove the outline when the button is focused */
+  cursor: pointer;               /* Set a pointer cursor to indicate interactivity */
+  margin: 0px;                   /* Remove any margin around the button */
+  border-radius: 20px;           /* Add rounded corners to the button */
+  background-color: rgb(28, 28, 105); /* Set the background color of the button */
+}
+
+/* Hover effect for the gallery button */
+.btnM-G:hover {
+  background-color: rgb(76, 76, 184); /* Change the background color on hover */
+  color: white;                       /* Change the text color on hover */
+}
+/* Styling for the container */
+.container3 {
+  display: flex;                  /* Use flexbox for layout */
+  flex-wrap: wrap;                /* Allow items to wrap to the next line if necessary */
+  width: 100%;                    /* Take up the full width of the container */
+  justify-content: center;        /* Center items along the main axis (horizontally) */
+  align-items: center;            /* Center items along the cross axis (vertically) */
+  background-color: rgb(17, 17, 37); /* Set the background color of the container */
+}
+
+/* Styling for columns within the container */
+.column3 {
+  width: 40%;                     /* Set the width of the columns to 40% of the container */
+}
+
+/* Styling for the welcome text */
+.welcome-text3 {
+  background-color: rgba(227, 226, 226, 0.8); /* Set the background color with alpha transparency */
+  margin-top: 70px;               /* Add top margin to the welcome text */
+  padding: 2px 40px;               /* Add padding on top/bottom and left/right to the welcome text */
+  text-align: justify;             /* Justify the text within the container */
+}
+/* Styling for image in section A */
+.imgM-A {
+  width: 500px;          /* Set the width of the image in section A */
+  height: 500px;         /* Set the height of the image in section A */
+  margin: 30px;          /* Add margin around the image in section A */
+  margin-bottom: 10px;   /* Add bottom margin to separate images in section A */
+}
+
+/* Styling for button in section A */
+.btnM-A {
+  text-align: center;    /* Center the text within the button in section A */
+  font-size: 16px;       /* Set the font size of the button text in section A */
+  color: #ffffff;        /* Set the text color to white in section A */
+  width: 30%;            /* Set the width of the button to 30% of its container in section A */
+  padding: 5px;          /* Add padding around the button text in section A */
+  border: 0;             /* Remove the border in section A */
+  outline: none;         /* Remove the outline when the button is focused in section A */
+  cursor: pointer;       /* Set a pointer cursor to indicate interactivity in section A */
+  margin-top: 5px;       /* Add top margin to the button in section A */
+  margin-bottom: 9px;    /* Add bottom margin to the button in section A */
+  border-radius: 20px;   /* Add rounded corners to the button in section A */
+  background-color: rgb(28, 28, 105); /* Set the background color of the button in section A */
+}
+
+/* Hover effect for the button in section A */
+.btnM-A:hover {
+  background-color: rgb(76, 76, 184); /* Change the background color on hover for the button in section A */
+  color: white;                       /* Change the text color on hover for the button in section A */
+}
+@media only screen and (max-width: 600px) {
+  
+  /* Adjustments for columns in smaller screens */
+  .column3 {
+      width: 100%;    /* Make the columns take full width on smaller screens */
+      float: none;    /* Remove the float to stack the columns vertically */
+  }
+
+  /* Adjustments for welcome text in smaller screens */
+  .welcome-text3 {
+      padding: 10px;  /* Add additional padding to the welcome text on smaller screens */
+  }
+
+  /* Adjustments for button in section A on smaller screens */
+  .btnM-A {
+      margin: 10px auto; /* Center the button horizontally and add margin top/bottom */
+  }
+
+  /* Adjustments for image in section A on smaller screens */
+  .imgM-A {
+      width: 80%;     /* Make the image width 80% of the container on smaller screens */
+  }
+}
+/* Styling for the main container */
+.container5 {
+  display: flex;                         /* Use flexbox for layout */
+  max-width: 1500px;                     /* Set the maximum width for the container */
+  margin-left: auto;                     /* Center the container horizontally */
+  margin-right: auto;
+  padding-left: 80px;                    /* Add left padding to the container */
+  padding-top: 60px;                     /* Add top padding to the container */
+  padding-bottom: 30px;                  /* Add bottom padding to the container */
+  background: linear-gradient(          /* Apply a linear gradient background */
+      to right, 
+      hsl(0, 1%, 83%),                   /* Starting color of the gradient */
+      hsl(180, 1%, 21%)                  /* Ending color of the gradient */
+  );
+  -webkit-background-clip: text;         /* Clip the background to the text */
+  -webkit-text-fill-color: transparent;  /* Set the text color to transparent */
+  text-align: center;                    /* Center the text within the container */
+}
+
+/* Styling for the h1 element within the container */
+.h1 {
+  font-size: 300px;                      /* Set the font size for the h1 element */
+  margin: 200px;                         /* Add margin around the h1 element */
+  font-family: 'Bitter', serif;          /* Set the font family for the h1 element */
+}
+@media only screen and (max-width: 600px) {
+
+  /* Adjustments for the main container on smaller screens */
+  .container5 {
+      width: 80%; /* Make the container take up 80% of the viewport width */
+  }
+
+  /* Adjustments for the h1 element on smaller screens */
+  .h1 {
+      font-size: 100px; /* Adjust the font size for smaller screens */
+      margin-top: 200px; /* Add top margin to the h1 element on smaller screens */
+      margin-left: 50px; /* Add left margin to the h1 element on smaller screens */
+      margin-right: 50px; /* Add right margin to the h1 element on smaller screens */
+  }
+}
+/* Styling for the main container */
+.container6 {
+  display: flex;                  /* Use flexbox for layout */
+  flex-wrap: wrap;                /* Allow items to wrap to the next line if necessary */
+  width: 100%;                    /* Take up the full width of the container */
+  justify-content: center;        /* Center items along the main axis (horizontally) */
+  align-items: center;            /* Center items along the cross axis (vertically) */
+  margin: 30px 0;                  /* Add margin on the top and bottom of the container */
+  background-color: black;        /* Set the background color of the container */
+}
+
+/* Styling for gallery items */
+.gallery-B {
+  width: 270px;                   /* Set a fixed width for each gallery item */
+  margin: 10px;                   /* Add margin around each gallery item */
+  box-sizing: border-box;         /* Include padding and border in the total width */
+  float: left;                    /* Float the items to the left to create a grid-like layout */
+  text-align: center;             /* Center the text within each gallery item */
+  border-radius: 20px;            /* Add rounded corners to the gallery items */
+  cursor: pointer;                /* Set a pointer cursor to indicate interactivity */
+  transition: -4s;                /* Add a transition effect with a duration of -4 seconds (likely a typo, consider using a positive value) */
+  background: rgb(203, 202, 202); /* Set the background color of the gallery items */
+}
+/* Hover effect for gallery items */
+.gallery-B:hover {
+  box-shadow: rgb(125, 175, 229) 0px 20px 30px -10px; /* Add box shadow on hover */
+  transform: translate(0px, -8px);                   /* Move the gallery item 8px up on hover */
+}
+
+/* Styling for gallery images */
+.imgB-G {
+  width: 200px;          /* Set the width of the gallery image */
+  height: 280px;         /* Set the height of the gallery image */
+  margin: 20px;          /* Add margin around the gallery image */
+  margin-bottom: 10px;   /* Add bottom margin to separate gallery images */
+}
+  /* Styling for gallery image descriptions */
+  h3 {
+    text-align: center;           /* Center the text within the h3 element */
+    color: black;                 /* Set the text color to black */
+    font-size: 17px;              /* Set the font size for the h3 element */
+    font-weight: 600;             /* Set the font weight to 600 (bold) */
+    margin-bottom: 10px;          /* Add bottom margin to the h3 element */
+    font-family: 'Roboto', sans-serif; /* Set the font family for the h3 element */
+}
+
+/* Styling for level 3 headings with a target attribute */
+h3[target] {
+    color: rgb(228, 223, 223);     /* Set the text color for h3 with a target attribute */
+    font-size: 20px;               /* Set the font size for h3 with a target attribute */
+    text-decoration: underline;    /* Add underline for h3 with a target attribute */
+}
+
+/* Styling for paragraphs */
+p {
+    text-align: justify;           /* Justify the text within the paragraph */
+    padding: 12px;                 /* Add padding around the paragraph */
+    color: black;                  /* Set the text color to black */
+    font-family: 'Jost', sans-serif; /* Set the font family for the paragraph */
+}
+.btnB-G {
+  text-align: center;            /* Center the text within the button */
+  font-size: 24px;               /* Set the font size of the button text */
+  color: #ffffff;                /* Set the text color to white */
+  width: 100%;                   /* Set the button width to 100% of its container */
+  padding: 15px;                 /* Add padding around the button text */
+  border: 0;                     /* Remove the border */
+  outline: none;                 /* Remove the outline when the button is focused */
+  cursor: pointer;               /* Set a pointer cursor to indicate interactivity */
+  margin: 0px;                   /* Remove any margin around the button */
+  border-radius: 20px;           /* Add rounded corners to the button */
+  background-color: rgb(28, 28, 105); /* Set the background color of the button */
+}
+
+/* Hover effect for the main button */
+.btnB-G:hover {
+  background-color: rgb(76, 76, 184); /* Change the background color on hover */
+}
+
+/* Styling for links within the button */
+.link {
+  color: white;                  /* Set the text color of the link to white */
+  text-decoration: none;         /* Remove the default text decoration of the link */
+}
+.container7 {
+  display: flex;                     /* Use flexbox for layout */
+  max-width: 1500px;                 /* Set the maximum width for the container */
+  margin-left: auto;                 /* Center the container horizontally */
+  margin-right: auto;
+  padding-left: 20px;                /* Add left padding to the container */
+  padding-top: 60px;                 /* Add top padding to the container */
+  padding-right: 55px;               /* Add right padding to the container */
+  padding-bottom: 30px;              /* Add bottom padding to the container */
+  background: linear-gradient(
+      to right, 
+      rgb(81, 81, 228),
+      rgb(34, 34, 116)
+  );                                 /* Apply a linear gradient background */
+  -webkit-background-clip: text;     /* Clip the background to the text */
+  -webkit-text-fill-color: transparent;  /* Set the text color to transparent */
+  text-align: center;                /* Center the text within the container */
+}
+
+/* Styling for the main heading */
+.h1A {
+  font-size: 300px;                  /* Set the font size for the main heading */
+  margin-left: 550px;                /* Add left margin to the main heading */
+  margin-top: 200px;                 /* Add top margin to the main heading */
+  font-family: 'Bitter', serif;      /* Set the font family for the main heading */
+}
+/* Media query for screens with a maximum width of 600 pixels */
+@media only screen and (max-width: 600px) {
+
+  /* Adjustments for the main container on smaller screens */
+  .container7 {
+      width: 80%;           /* Make the container take up 80% of the viewport width */
+      padding-left: 50px;   /* Add left padding to the container on smaller screens */
+      margin: 0px 7px;      /* Add margin on the top and bottom of the container */
+  }
+
+  /* Adjustments for the main heading on smaller screens */
+  .h1A {
+      font-size: 100px;     /* Adjust the font size for smaller screens */
+      margin-top: 200px;    /* Add top margin to the main heading on smaller screens */
+      margin-left: 50px;    /* Add left margin to the main heading on smaller screens */
+      margin-right: 50px;   /* Add right margin to the main heading on smaller screens */
+  }
+}
+/* Styling for the main container */
+.container8 {
+  display: flex;                    /* Use flexbox for layout */
+  max-width: 1500px;                /* Set the maximum width for the container */
+  margin-left: auto;                /* Center the container horizontally */
+  margin-right: auto;
+  padding-left: 20px;               /* Add left padding to the container */
+  padding-right: 80px;              /* Add right padding to the container */
+  padding-top: 60px;                /* Add top padding to the container */
+  background-color: black;          /* Set the background color of the container */
+}
+
+/* Styling for columns within the container */
+.column8 {
+  width: 50%;                       /* Set the width of the columns to 50% of the container */
+}
+
+/* Styling for the welcome text */
+.welcome-text8 {
+  background-color: rgba(247, 231, 231, 0.8); /* Set the background color with alpha transparency */
+  margin-top: 50px;                 /* Add top margin to the welcome text */
+  padding: 15px 25px;               /* Add padding on top/bottom and left/right to the welcome text */
+  margin-left: 50px;                /* Add left margin to the welcome text */
+  text-align: justify;              /* Justify the text within the container */
+}
+
+/* Styling for the first letter of paragraphs with the class "About1" */
+p.About1::first-letter {
+  color: black;      /* Set the color of the first letter */
+  font-size: 25px;   /* Set the font size of the first letter */
+}
+
+/* Styling for blockquote elements */
+blockquote b::before, blockquote b::after {
+  color: rgb(33, 33, 86); /* Set the color for blockquote content */
+  line-height: 0;         /* Set the line height to 0 to hide the content */
+  vertical-align: middle; /* Align content vertically in the middle */
+}
+
+/* Styling for the first child of <b> elements within blockquotes */
+blockquote b:first-child::before {
+  content: "\275D";      /* Set the content before the first child of <b> in blockquote */
+  margin: 0 3px 0 -28px;  /* Adjust the margin for proper positioning */
+}
+
+/* Styling for the last child of <b> elements within blockquotes */
+blockquote b:last-child::after {
+  content: "\275E";      /* Set the content after the last child of <b> in blockquote */
+  margin: 0 -28px 0 3px;  /* Adjust the margin for proper positioning */
+}
+
+/* Styling for <b> elements */
+b {
+  font-size: 23px;        /* Set the font size for <b> elements */
+}
+/* Styling for empty paragraphs */
+p:empty {
+  width: 400px;                     /* Set the width for empty paragraphs */
+  height: 1px;                      /* Set the height for empty paragraphs */
+  background: rgb(46, 129, 170);    /* Set the background color for empty paragraphs */
+}
+
+/* Styling for empty element with ID "About2" */
+#About2:empty {
+  width: 1000px;                    /* Set the width for empty element with ID "About2" */
+  height: 1px;                      /* Set the height for empty element with ID "About2" */
+  background: rgb(46, 129, 170);    /* Set the background color for empty element with ID "About2" */
+}
+
+/* Media query for screens with a maximum width of 768 pixels */
+@media (max-width: 768px) {
+  /* Adjustments for empty paragraphs on smaller screens */
+  p:empty {
+      width: 90%; /* Adjust the width for smaller screens */
+  }
+
+  /* Adjustments for empty element with ID "About2" on smaller screens */
+  #About2:empty {
+      width: 90%; /* Adjust the width for smaller screens */
+  }
+}
+
+/* Styling for the image with ID "img1" */
+#img1 {
+  width: 530px;                    /* Set the width for the image */
+  height: 700px;                   /* Set the height for the image */
+  padding: 100px 25px;             /* Add padding around the image */
+  margin-top: 50px;                /* Add top margin to the image */
+}
+
+/* Media query for screens with a maximum width of 600 pixels */
+@media (max-width: 600px) {
+  /* Adjustments for the main container on smaller screens */
+  .container8 {
+      flex-direction: column;      /* Change the flex direction to column on smaller screens */
+      align-items: center;         /* Center items along the cross axis (vertically) on smaller screens */
+  }
+
+  /* Adjustments for columns within the container on smaller screens */
+  .column8 {
+      width: 100%;                /* Make the column take full width on smaller screens */
+      box-sizing: border-box;     /* Include padding and border in the total width */
+      padding: 10px;              /* Add padding around the column on smaller screens */
+  }
+
+  /* Adjustments for the welcome text on smaller screens */
+  .welcome-text8 {
+      padding: 10px;              /* Add padding to the welcome text on smaller screens */
+  }
+
+  /* Adjustments for the image with ID "img1" on smaller screens */
+  #img1 {
+      width: 80%;                 /* Adjust the width for smaller screens */
+      height: auto;               /* Maintain the aspect ratio of the image on smaller screens */
+  }
+}
+
+/* Styling for the main container */
+.container9 {
+  display: flex;                    /* Use flexbox for layout */
+  max-width: 1500px;                /* Set the maximum width for the container */
+  margin-left: auto;                /* Center the container horizontally */
+  margin-right: auto;
+  padding-right: 80px;              /* Add right padding to the container */
+  padding-top: 60px;                /* Add top padding to the container */
+  padding-bottom: 30px;             /* Add bottom padding to the container */
+  background-color: black;          /* Set the background color of the container */
+}
+
+/* Styling for columns within the container */
+.column9 {
+  width: 50%;                       /* Set the width of the columns to 50% of the container */
+}
+
+/* Styling for the welcome text */
+.welcome-text9 {
+  background-color: rgba(247, 231, 231, 0.8); /* Set the background color with alpha transparency */
+  margin-top: 50px;                 /* Add top margin to the welcome text */
+  padding: 15px 25px;               /* Add padding on top/bottom and left/right to the welcome text */
+  margin-right: 50px;               /* Add right margin to the welcome text */
+}
+/* Styling for the image with ID "img2" */
+#img2 {
+  width: 550px;                    /* Set the width for the image */
+  height: 750px;                   /* Set the height for the image */
+  padding: 100px 140px;            /* Add padding around the image */
+  margin-top: 50px;                /* Add top margin to the image */
+}
+
+/* Media query for screens with a maximum width of 600 pixels */
+@media screen and (max-width: 600px) {
+  /* Adjustments for the main container on smaller screens */
+  .container9 {
+      flex-direction: column;      /* Change the flex direction to column on smaller screens */
+      align-items: center;         /* Center items along the cross axis (vertically) on smaller screens */
+  }
+
+  /* Adjustments for columns within the container on smaller screens */
+  .column9 {
+      width: 100%;                /* Make the column take full width on smaller screens */
+      box-sizing: border-box;     /* Include padding and border in the total width */
+      padding: 10px;              /* Add padding around the column on smaller screens */
+  }
+
+  /* Adjustments for the welcome text on smaller screens */
+  .welcome-text9 {
+      padding: 10px;              /* Add padding to the welcome text on smaller screens */
+  }
+
+  /* Adjustments for the image with ID "img2" on smaller screens */
+  #img2 {
+      width: 80%;                 /* Adjust the width for smaller screens */
+      height: auto;               /* Maintain the aspect ratio of the image on smaller screens */
+  }
+}
+/* Styling for the main container */
+.container10 {
+  display: flex;                    /* Use flexbox for layout */
+  max-width: 1500px;                /* Set the maximum width for the container */
+  margin-left: auto;                /* Center the container horizontally */
+  margin-right: auto;
+  padding-right: 80px;              /* Add right padding to the container */
+  padding-top: 30px;                /* Add top padding to the container */
+  padding-bottom: 30px;             /* Add bottom padding to the container */
+  background-color: rgb(24, 24, 55);/* Set the background color of the container */
+}
+
+/* Styling for columns within the container */
+.column10 {
+  width: 100%;                      /* Set the width of the columns to 100% of the container */
+}
+
+/* Styling for the welcome text */
+.welcome-text10 {
+  background-color: rgba(247, 231, 231, 0.8); /* Set the background color with alpha transparency */
+  margin-top: 50px;                 /* Add top margin to the welcome text */
+  padding: 15px 25px;               /* Add padding on top/bottom and left/right to the welcome text */
+  margin-left: 50px;                /* Add left margin to the welcome text */
+}
+
+  /* Media query for screens with a maximum width of 600 pixels */
+@media screen and (max-width: 600px) {
+  /* Adjustments for the main container on smaller screens */
+  .container10 {
+      flex-direction: column;      /* Change the flex direction to column on smaller screens */
+      align-items: center;         /* Center items along the cross axis (vertically) on smaller screens */
+  }
+
+  /* Adjustments for columns within the container on smaller screens */
+  .column10 {
+      width: 100%;                /* Make the column take full width on smaller screens */
+      box-sizing: border-box;     /* Include padding and border in the total width */
+      padding: 10px;              /* Add padding around the column on smaller screens */
+  }
+
+  /* Adjustments for the welcome text on smaller screens */
+  .welcome-text10 {
+      padding: 10px;              /* Add padding to the welcome text on smaller screens */
+  }
+}
+/* 
+   Styling for ordered list items 
+*/
+ol li {
+  font-size: 17px; /* Set the font size for all ordered list items */
+}
+
+/* 
+   Styling for odd-indexed ordered list items 
+*/
+ol li:nth-of-type(odd) {
+  color: rgb(32, 32, 184); /* Change text color for odd-indexed list items */
+}
+
+/* 
+   Styling for the main container 
+*/
+.container11 {
+  display: flex; /* Use flexbox for layout */
+  max-width: 1500px; /* Set the maximum width of the container */
+  margin-left: auto; /* Auto margin for centering the container horizontally */
+  margin-right: auto; /* Auto margin for centering the container horizontally */
+  padding-right: 80px; /* Add right padding */
+  padding-top: 30px; /* Add top padding */
+  padding-bottom: 30px; /* Add bottom padding */
+  background-color: rgb(24, 24, 55); /* Set the background color of the container */
+}
+/* 
+   Styling for each column in the container 
+*/
+.column11 {
+  width: 50%; /* Set the width of each column to 50% for a two-column layout */
+}
+
+/* 
+   Styling for the welcome text within the container 
+*/
+.welcome-text11 {
+  background-color: rgba(247, 231, 231, 0.8); /* Set a light background color with some transparency */
+  margin-top: 50px; /* Add top margin to the welcome text */
+  padding: 15px 25px; /* Add padding to the welcome text */
+  margin-left: 50px; /* Add left margin to the welcome text */
+}
+
+/* 
+   Styling for specific h3 elements within divs 
+*/
+div > h3 {
+  background-color: rgb(46, 129, 170); /* Set a background color for h3 elements within divs */
+}
+
+/* 
+   Styling for an image with ID img3 
+*/
+#img3 {
+  width: 400px; /* Set the width of the image */
+  height: 400px; /* Set the height of the image */
+  padding: 40px 140px; /* Add padding around the image */
+  margin-top: 50px; /* Add top margin to the image */
+}
+/* 
+   Media query for screens with a maximum width of 600px 
+*/
+@media screen and (max-width: 600px) {
+  .container11 {
+    flex-direction: column; /* Change the flex direction to column for a one-column layout */
+    align-items: center; /* Center-align items within the container */
+  }
+
+  .column11 {
+    width: 100%; /* Make the column take full width on smaller screens */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    padding: 10px; /* Add padding to the column */
+  }
+
+  .welcome-text11 {
+    padding: 10px; /* Adjust padding for the welcome text on smaller screens */
+  }
+
+  #img3 {
+    width: 80%; /* Adjust the width of the image for smaller screens */
+    height: auto; /* Maintain the aspect ratio of the image */
+  }
+}
+/* 
+   Styling for a background image 
+*/
+.bg-image {
+  background-image: linear-gradient(rgba(32, 32, 32, 0.7), rgba(25, 25, 27, 0.7)), url('F2.jpg'); /* Set a background image with a linear gradient overlay */
+  height: 130%; /* Adjust the height of the background image */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-size: cover; /* Cover the entire container with the background image */
+}
+
+/* 
+   Styling for the main container 
+*/
+.container12 {
+  width: 100%; /* Set the width of the container to 100% */
+}
+
+/* 
+   Styling for text over the background image 
+*/
+.bg-text {
+  background-color: rgba(229, 226, 226, 0.4); /* Set a semi-transparent background color for the text */
+  color: rgb(255, 252, 252); /* Set the text color */
+  font-weight: bold; /* Set the font weight to bold */
+  border-radius: 30px; /* Add rounded corners to the text box */
+  border: 3px solid #ccc; /* Add a border to the text box */
+  position: absolute; /* Position the text box absolutely within its containing element */
+  top: 60%; /* Position the text box 60% from the top of its containing element */
+  left: 50%; /* Position the text box 50% from the left of its containing element */
+  transform: translate(-50%, -50%); /* Center the text box both vertically and horizontally */
+  z-index: 8; /* Set the stacking order of the text box */
+  padding: 28px; /* Add padding to the text box */
+  padding-right: 80px; /* Add additional right padding to the text box */
+  text-align: center; /* Center-align the text within the text box */
+}
+/* 
+   Styling for the main heading 
+*/
+.h1F {
+  font-size: 30px; /* Set the font size for the main heading */
+  text-align: center; /* Center-align the text of the main heading */
+  text-transform: capitalize; /* Capitalize the text of the main heading */
+  font-family: 'Bitter', serif; /* Set the font family for the main heading */
+  color: white; /* Set the text color of the main heading to white */
+}
+
+/* 
+   Styling for the form 
+*/
+form {
+  margin: 6px; /* Set a margin for the form */
+  width: 100%; /* Set the width of the form to 100% */
+  padding: 20px; /* Add padding to the form */
+  border: 2px solid #ccc; /* Add a border to the form */
+  border-radius: 20px; /* Add border-radius to create rounded corners for the form */
+}
+
+/* 
+   Styling for form fieldset 
+*/
+fieldset {
+  border: 1px solid lightgray; /* Add a border to the fieldset */
+  border-radius: 10px; /* Add border-radius to create rounded corners for the fieldset */
+  margin: 10px; /* Set a margin for the fieldset */
+}
+/* 
+   Styling for form legend 
+*/
+legend {
+  font-weight: 700; /* Set a bold font weight for the form legend */
+}
+
+/* 
+   Styling for spacing between form elements 
+*/
+div + div {
+  margin-top: 1em; /* Add margin at the top of each div following another div */
+}
+
+/* 
+   Styling for form labels 
+*/
+label {
+  font-size: 18px; /* Set the font size for form labels */
+  color: white; /* Set the text color for form labels to white */
+}
+
+/* 
+   Styling for form input and textarea 
+*/
+input,
+textarea {
+  width: 300px; /* Set the width of form input and textarea */
+  height: 30px; /* Set the height of form input and textarea */
+}
+/* 
+   Styling for invalid email input 
+*/
+input[type=email]:invalid {
+  border: 3px solid rgb(25, 25, 115); /* Add a 3px solid border with a specific color for invalid email input */
+}
+
+/* 
+   Styling for input types other than submit 
+*/
+input:not([type="submit"]) {
+  border-bottom: 3px solid #000000; /* Add a 3px solid bottom border for input types other than submit */
+}
+
+/* 
+   Styling for form labels with background color 
+*/
+.label {
+  background-color: rgba(233, 227, 227, 0.905); /* Set a background color with some transparency for form labels */
+  border: none; /* Remove the border for form labels */
+  border-radius: 8px; /* Add border-radius to create rounded corners for form labels */
+}
+
+/* 
+   Styling for focus-visible state of form labels 
+*/
+.label:focus-visible {
+  outline: none; /* Remove the default outline on focus */
+  border-color: rgb(25, 25, 115); /* Change the border color on focus for form labels */
+}
+
+/* 
+   Styling for textarea height 
+*/
+textarea {
+  height: 12em; /* Set the height of the textarea to 12em */
+}
+button{
+    margin:5px;
+    font-size: 18px;
+    text-transform: capitalize;
+    background-color: rgb(28, 28, 105);;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+button:hover{
+  background-color:rgb(76, 76, 184);
+  color:white;
+}
+#submitbutton{
+    display:flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .bg-text {
+      padding-right: 140px; /* Adjust padding for smaller screens */
+      padding-bottom: 30px;  
+  }
+  form {
+      width:130%; /* Adjust form width for smaller screens */
+  }
+  fieldset{
+    margin:15px;
+  }
+  input,
+  textarea {
+      width: 100%; /* Make input and textarea full width */
+  }
+  div + div{
+    margin-top: 30px;
+  }
+  button {
+      padding: 10px; /* Adjust button padding for smaller screens */
+  }
+}
+
+  .container4{
+    max-width: 1170px;
+    margin: auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: rgb(47, 46, 46);
+    padding: 2px 0;
+  }
+  .footer-col{
+    width: 15%;
+    padding: 0 29px;
+  }
+  .footer-col h4 a{
+    font-size: 25px;
+    color: #ffffff;
+    font-family:'Nunito', sans-serif;  
+    text-decoration: none;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4 a:hover{
+    color: red;
+    text-decoration: none;
+  }
+  .footer-col h4::before{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom: -5px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+  }
+  .social a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height:40px;
+    color:white;
+    transition: all 0.5s ease;
+  }
+  .social a:hover{
+    color: red;
+  }
+  @media(max-width:600px){
+    .container4 {
+      text-align: left;
+    }
+    .footer-col{
+      width:100%;
+      margin-bottom:30px;
+    }
+  }
+  
+  footer .bottom-details{
+    width: 100%;
+  }
+  footer .bottom-details .bottom_text{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  h5{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+  }
+  .bottom-details .bottom_text a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+  .bottom-details .bottom_text a:hover{
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .bottom-details .bottom_text a{
+    margin-right: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    .bottom-details .bottom_text {
+        flex-direction:row; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .bottom-details .bottom_text a {
+        padding-left: 10px;
+        margin-left: 30px;
+        margin-bottom: 15px; /* Add bottom margin for spacing on smaller screens */
+       
+    }
+}
